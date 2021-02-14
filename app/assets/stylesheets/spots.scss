@@ -1,0 +1,21 @@
+h1{
+  font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+  text-align: center;
+}
+.form-group{
+  margin-bottom: 35px;
+}
+.input:required{
+  background: #ffcdd2;
+}
+.input[type="email"]:invalid{
+  background: #ffcdd2;
+}
+.input:valid{
+  background: transparent;
+}
+.input:focus{
+  background: #DCEDC8;
+}
