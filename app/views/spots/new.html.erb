@@ -1,0 +1,8 @@
+<h1>スポットを追加する</h1>
+<%= form_with model: @spot, local: true do |f| %>
+  <p>スポット名：<%= f.text_field :name %></p>
+  <p>説明：<%= f.text_area :description %></p>
+  <p>郵便番号：<%= f.number_field :postal_code, in: 7 %></p>
+  <p>住所：<%= f.text_field :address %></p>
+  <%= f.submit "送信" %>
+<% end %>
